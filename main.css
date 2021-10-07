@@ -1,0 +1,224 @@
+body {
+    background-color: #b4be44;
+    position: absolute;
+    top: 10%;
+}
+
+.food {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+    background-color: #fff;
+    margin: 45px auto;
+    height: 410px;
+    grid-template-rows: 1fr 30px 1fr;
+    grid-gap: 25px;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+}
+
+@media only screen and (max-width:768px) {
+    .food {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        height: 100%;
+    }
+    
+    .grid_itemone {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 3;
+    }
+
+    .grid_itemfive, .grid_itemnine {
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 1;
+        grid-column-end: 4;
+    }
+ 
+     .grid_itemnine {
+        position: absolute;
+        top: 110px;
+        width: 250px;
+        right: -5px;
+    } 
+
+    .grid_itemtwo {
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-row-end: 2;
+        grid-column-end: 4;
+    }
+
+    .grid_itemsix, .grid_itemten {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 3;
+    }
+
+     .grid_itemten {
+        position: absolute;
+        top: 320px;
+        width: 250px;
+        left: 35px;
+    }
+
+    .grid_itemthree {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+
+    .grid_itemseven, .grid_itemeleven {
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 4;
+    }
+
+     .grid_itemeleven {
+        position: absolute;
+        top: 550px;
+        width: 250px;
+        right: -5px;
+    }
+
+    .grid_itemfour {
+        grid-row-start: 4;
+        grid-column-start: 3;
+        grid-row-end: 4;
+        grid-column-end: 4;
+    }
+
+    .grid_itemeight, .grid_itemtvelwe {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 2;
+    }
+
+     .grid_itemtvelwe {
+        position: relative;
+        top: 60px;
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .food {
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .grid_itemone {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 1;
+        grid-column-end: 4;
+    }
+
+    .grid_itemfive 
+     {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 4;
+    }
+
+    .grid_itemnine {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end:3;
+        height: 100px;
+        left: 5%;
+        position: relative;
+        top: 0px;
+
+    }
+
+    .grid_itemtwo {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 4;
+    }
+
+    .grid_itemsix {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-row-end: 5;
+        grid-column-end: 4;
+    }
+
+    .grid_itemten {
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-row-end: 6;
+        grid-column-end: 4;
+        position: relative;
+        top: 0px;
+        left: 5%;
+        text-align: center;
+        height: 100px;
+    }
+
+    .grid_itemthree {
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-row-end: 7;
+        grid-column-end: 4;
+    }
+
+    .grid_itemseven {
+        grid-row-start: 8;
+        grid-column-start: 1;
+        grid-row-end: 8;
+        grid-column-end: 4;
+    }
+
+    .grid_itemeleven {
+        grid-row-start: 9;
+        grid-column-start: 1;
+        grid-row-end: 9;
+        position: relative;
+        top: 0px;
+        left: 5%;
+        grid-column-end: 4; 
+        height: 100px;
+    }
+
+    .grid_itemfour {
+        grid-row-start: 10;
+        grid-column-start: 1;
+        grid-row-end: 10;
+        grid-column-end: 4;
+    }
+
+    .grid_itemeight{
+        grid-row-start: 11;
+        grid-column-start: 1;
+        grid-row-end: 11;
+        grid-column-end: 4;
+    }
+
+    .grid_itemtvelwe {
+        grid-row-start: 12;
+        top: 10px;
+        position: relative;
+        grid-column-start: 1;
+        grid-row-end: 12;
+        grid-column-end: 4;
+        /* text-align: center; */
+        height: 120px;
+        left: 5px;
+    } 
+    
+}
